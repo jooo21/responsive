@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>layout3</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        #wrap {width: 1200px; margin:0 auto; color:#fff;}
+        .header {width: 100%; height: 100px; background: #b4d9ea;}
+        .aside {float: left;width: 30%; height: 810px; background: #6ac4ed;}
+        section {float: left; width: 70%; height: 270px;}
+        .article1 {background: #71b3d1;}
+        .article2 {background: #598ba2;}
+        .article3 {background: #3c7c9a;}
+        .footer {clear: both; width: 100%; height: 150px; background: #3681a3;}
+        
+        /*화면 너비 0~1200px*/
+        @media (max-width: 1240px){
+            #wrap {width:100%;}
+            .header {height:200px;}
+            .aside {height:860px;}
+            .article1 {height:430px;}
+            .article2 {height:430px;}
+            .article3 {width:100%;}
+        }
+        /*화면 너비 0~768px*/
+        @media (max-width: 768px){
+            .header {height:300px;}
+            .aside {width:100%; height:300px;}
+            .article1 {width:50%;}
+            .article2 {width: 50%;}
+        }
+        /*화면 너비 0~480px*/
+        @media (max-width: 480px){
+            .header {height:350px;}
+            .aside {height:500px;}
+            .article1 {width:100%;}
+            .article2 {width:100%;}
+            .article3 {height:430px}
+            .footer {height:200px;}
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header"></header>
+        <aside class="aside"></aside>
+        <section class="article1"></section>
+        <section class="article2"></section>
+        <section class="article3"></section>
+        <footer class="footer"></footer>
+    </div>
+</body>
+</html>
