@@ -295,6 +295,8 @@ body {background: url(../img/header_bg.jpg) repeat-x center top;}
     display: inline-block;
     text-indent: -9999px;
     font: normal normal normal 14px/1 FontAwesome;
+    cursor: pointer;
+    background: none;
 }
 .slider .slick-prev::before {
     content:"\f053";
@@ -307,6 +309,8 @@ body {background: url(../img/header_bg.jpg) repeat-x center top;}
     display: inline-block;
     text-indent: -9999px;
     font: normal normal normal 14px/1 FontAwesome;
+    cursor: pointer;
+    background: none;
 }
 .slider .slick-next::before { 
     content:"\f054";
@@ -336,7 +340,12 @@ body {background: url(../img/header_bg.jpg) repeat-x center top;}
 .video {position: relative; width: 100%; padding-bottom: 56.25%;}
 .video iframe {position: absolute; width: 100%; height: 100%;}
 
-
+/* 푸터 */
+.footer {text-align: center; padding: 30px 50px;}
+.footer li {position: relative; display: inline; padding: 0 7px 0 10px; white-space: nowrap;}
+.footer li:before {content:""; width: 1px; height: 12px; background-color: #dbdbdb; position: absolute; left: 0; top: 2px;}
+.footer li:first-child::before{width: 0;}
+.footer address {padding-top: 15px;}
 /* media query*/
 /* 화면 너비 0 ~ 1220px */
 @media (max-width: 1220px){
