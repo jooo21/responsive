@@ -1,8 +1,8 @@
 /* 레이아웃 */
-body {background: url(../img/header_bg.jpg) repeat-x center top;}
+body {background: url(../img/header_bg.png) repeat-x center top;}
 #header {}
-#nav {background-color: #f6fdff;}
-#title {background-color: #eaf7fd;}
+#nav {background-color: #fff;}
+#title {background-color: #ebebeb;}
 #contents .container {border-right: 1px solid #dbdbdb; border-left: 1px solid #dbdbdb;}
 #cont_left {float: left; width: 250px;}
 #cont_center {
@@ -24,24 +24,24 @@ body {background: url(../img/header_bg.jpg) repeat-x center top;}
 
 .header .header_tit {text-align: center; text-transform: uppercase; margin-top: 55px; font-family: 'Abel', sans-serif;}
 .header .header_tit h1 {
-    font-size: 30px; 
+    font-size: 60px; 
     color: #fff; 
-    background: #51b0dc; 
     display: inline-block; 
+    font-family: 'Rajdhani', sans-serif;
     padding: 5px 30px 5px 30px; 
     letter-spacing: 2px; 
-    font-weight: 900; 
+    font-weight: normal; 
     transition: box-shadow 0.25s ease-in-out;
 }
 .header .header_tit h1:hover {
     box-shadow: 
-        inset -9em 0 0 0 #257fac, 
-        inset 9em 0 0 0 #257fac;
+        inset -9em 0 0 0 #d3c5c8, 
+        inset 9em 0 0 0 #d3c5c8;
     }
 .header .header_tit a {
     font-size: 16px; 
     color: #fff; 
-    background: #4a9abf; 
+    background: #d3c5c8; 
     display: inline-block; 
     padding: 10px 20px 10px 20px; 
     margin-top: -7px; 
@@ -49,7 +49,7 @@ body {background: url(../img/header_bg.jpg) repeat-x center top;}
 }
 .header .header_tit a:hover {
     box-shadow: 
-        0 0 0 5px rgba(75,154,191,0.9) inset, 
+        0 0 0 5px #e7cfd4 inset, 
         0 0 0 100px rgba(0,0,0,0.1) inset;
 }
 
@@ -57,7 +57,7 @@ body {background: url(../img/header_bg.jpg) repeat-x center top;}
 .header .header_icon li {display: inline; margin: 0 2px;}
 .header .header_icon li a {
     position: relative; 
-    background-color: #3192bf; 
+    /* background-color: #d3c5c8;  */
     border-radius: 50%; 
     width: 60px; height: 60px; 
     color: #fff;  display: 
@@ -72,7 +72,7 @@ body {background: url(../img/header_bg.jpg) repeat-x center top;}
     transform: translateX(-50%); 
     font-size: 12px; 
     line-height: 1.6; 
-    background: #3192bf; 
+    background: #d3c5c8; 
     padding: 3px 9px; 
     border-radius: 6px 0; 
     opacity: 0; 
@@ -83,7 +83,7 @@ body {background: url(../img/header_bg.jpg) repeat-x center top;}
     position: absolute; 
     left: 50%; bottom: -5px; 
     margin-left: -5px; 
-    border-top: 5px solid #3192bf; 
+    border-top: 5px solid #d3c5c8; 
     border-left: 5px solid transparent; 
     border-right: 5px solid transparent;
 }
@@ -93,7 +93,7 @@ body {background: url(../img/header_bg.jpg) repeat-x center top;}
 }
 .header .header_icon li a:hover {
     box-shadow: 
-        0 0 0 3px rgba(75,154,191,0.9) inset, 
+        0 0 0 3px #a79699f8 inset, 
         0 0 0 100px rgba(0,0,0,0.1) inset;
 }
 
@@ -108,17 +108,17 @@ body {background: url(../img/header_bg.jpg) repeat-x center top;}
 .nav > div li:before {
     content: '';
     width: 3px; height: 3px;
-    background-color: #25a2d0;
+    background-color: #d3c5c8;
     border-radius: 50%;
     position: absolute; left: 0; top: 6px;
 }
-.nav > div h3 {font-size: 18px; color: #25a2d0; font-weight: bold; margin-bottom: 4px;}
+.nav > div h3 {font-size: 18px; color: #d3c5c8; font-weight: bold; margin-bottom: 4px;}
 .nav > div li a {position: relative;}
 .nav > div li a:after {
     content: '';
     display: inline-block;
     width: 0; height: 1px;
-    background: #25aad0;
+    background: #d3c5c8;
     transition: all .2s ease-out;
     position: absolute; bottom: 0; left: 0;
 }
@@ -126,25 +126,25 @@ body {background: url(../img/header_bg.jpg) repeat-x center top;}
 
 /* 타이틀 */
 .title {position: relative; text-align: center;}
-.title h2 {font-family: 'Nanum Brush Script', cursive; font-size: 39px; color: #0093bd; padding: 5px 0;}
+.title h2 {font-family: 'Rajdhani', sans-serif; font-size: 19px; padding:24px 0; color: #1b2a2e;}
 .title .btn {
     position: absolute; right: 0; top: 5px;
     width: 60px; height: 60px;
     line-height: 60px;
-    background: #3192bf; color: #fff;
+    background: #d3c5c8; color: #fff;
     font-size: 35px;
     border-radius: 50%;
     transition: all 0.3s ease;
 }
 .title .btn:hover {
     box-shadow:
-        0 0 0 3px rgba(71,154,191,0.9) inset,
+        0 0 0 3px #a79699f8 inset,
         0 0 0 100px rgba(0,0,0,0.1) inset; 
 }
 
 /* 컨텐츠 영역 */
 .column {padding: 15px; border-bottom: 1px solid #dbdbdb;}
-.column .col_tit {font-size: 20px; color: #2f7fa6; padding-bottom: 5px;}
+.column .col_tit {font-size: 20px; color: #afa4a6; padding-bottom: 5px;}
 .column .col_desc {
     border-bottom: 1px dashed #dbdbdb; 
     padding-bottom: 15px; margin-bottom: 15px; 
@@ -174,20 +174,20 @@ body {background: url(../img/header_bg.jpg) repeat-x center top;}
     position: absolute; right: 10px; top: 15px;
 }
 .menu li a:hover {
-    box-shadow: inset 180px 0 0 0 rgba(36,130,174,0.7);
+    box-shadow: inset 180px 0 0 0 a79699f8;
     color: #fff;
-    background: rgba(36,130,174,0.9);
+    background: rgba(211, 197, 200, 0.9);
 }
 
 /* 게시판1 */
 .notice1 {position: relative;}
-.notice1 h5 {font-size: 14px; color: #2f7fa6; padding-bottom: 5px;}
+.notice1 h5 {font-size: 14px; color: #afa4a6; padding-bottom: 5px;}
 .notice1 li {position: relative; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding-left: 8px;}
 .notice1 li:before {
     content: '';
     width: 3px; height: 3px;
     border-radius: 50%;
-    background: #449ce2;
+    background: #a79699f8;
     position: absolute; left: 0; top: 6px;
 }
 .notice1 .more {
@@ -199,7 +199,7 @@ body {background: url(../img/header_bg.jpg) repeat-x center top;}
 
 /* 게시판2 */
 .notice2 {position: relative;}
-.notice2 h5 {font-size: 14px; color: #2f7fa6; padding-bottom: 5px;}
+.notice2 h5 {font-size: 14px; color: #878787; padding-bottom: 5px;}
 .notice2 li {
     position: relative;
     overflow: hidden; text-overflow: ellipsis;
@@ -214,7 +214,7 @@ body {background: url(../img/header_bg.jpg) repeat-x center top;}
     content: '';
     width: 3px; height: 3px;
     border-radius: 50%;
-    background: #449ce2;
+    background: #aca4a4;
     position: absolute; left: 0; top: 6px;
 }
 .notice2 .more {
@@ -285,10 +285,10 @@ body {background: url(../img/header_bg.jpg) repeat-x center top;}
     font-size: 0; line-height: 0;
     display: block; width: 15px; height: 15px;
     cursor: pointer;
-    background: #5dbfeb;
+    background: #878787;
     border-radius: 50%;
 }
-.slider .slick-dots li.slick-active button {background: #2b91c8;}
+.slider .slick-dots li.slick-active button {background: #666666;}
 .slider .slick-prev {
     position: absolute; left: 0; bottom: 0; z-index: 1000;
     width: 30px; height: 30px;
@@ -300,7 +300,7 @@ body {background: url(../img/header_bg.jpg) repeat-x center top;}
 }
 .slider .slick-prev::before {
     content:"\f053";
-    color: #5dbfeb;
+    color: #878787;
     text-indent: 0;
     position: absolute; left: 9px; top: 8px;
 }
@@ -314,7 +314,7 @@ body {background: url(../img/header_bg.jpg) repeat-x center top;}
 }
 .slider .slick-next::before { 
     content:"\f054";
-    color: #5dbfeb;
+    color: #878787;
     text-indent: 0;
     position: absolute; left: 11px; top: 8px;
 }
